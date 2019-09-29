@@ -1,0 +1,32 @@
+.decoration{
+	text-align: center;
+}
+
+.inputField{
+	width:400px;
+	border-radius: 5px;
+}
+
+.button{
+	background-color: #48C562;
+	border-radius: 5px;
+	height: 20px;
+	border: 0px;
+}
+
+.frameSet{
+
+	height: 570px;
+	width: 1000px;
+	background-color: #D6F1FB;
+	text-align: left;
+	
+
+}
+
+.header{
+	height: 35px;
+	background-color: #0F9AA3;
+}
+
+

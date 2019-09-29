@@ -1,12 +1,22 @@
-import React from 'react';
+import React from 'react'; //eslint-disable-line no-unused-vars
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import {Route,BrowserRouter as Router,Link} from 'react-router-dom';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import HomePage from './component/HomePage/HomePage';
+import CoinInfo from './component/CoinInfo/CoinInfo';
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+const routing=
+
+
+<Router>
+		<Link to="/CoinInfo"></Link>
+
+		<Route exact path="/" component={HomePage}/>
+		<Route path="/CoinInfo" component={CoinInfo}/>
+</Router>
+
+ReactDOM.render(
+	routing,
+	document.getElementById('root')
+	);
